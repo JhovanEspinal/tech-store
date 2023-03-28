@@ -5,7 +5,7 @@ export class BuysModel{
         public idType: string,
         public idClient: string,
         public clientName: string,
-        public products :BuysModel[]
+        public products :BuysProduct[]
     ){}
 }
 

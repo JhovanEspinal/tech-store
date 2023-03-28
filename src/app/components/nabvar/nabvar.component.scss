@@ -1,5 +1,36 @@
 .navbarS{
-background-color: rgb(204, 207, 209);
+background-color: rgba(24, 151, 194, 0.759);
 }
 
 
+.img{
+    margin-bottom: 6px;
+}
+
+.items{
+margin-left: 15px;
+}
+
+
+
+a{
+    color: white;
+}
+
+.nav-link:hover {
+    color: white;
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+  }
+
+.btn:hover{
+    color: rgb(255, 255, 255);
+}  
+
+.icolor{
+color: rgb(255, 255, 255);
+}
+
+.iconCar:hover{
+    width: 27px;
+    height: 27px;
+}

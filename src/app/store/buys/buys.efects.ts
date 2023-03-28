@@ -1,3 +1,4 @@
+import { NotificationModel } from './../../models/notification.model';
 import { BuysFacade } from './../../facades/buys.facade';
 import { BuysService } from './../../services/buys.services';
 import { Injectable } from '@angular/core';
@@ -29,5 +30,23 @@ export class BuysEffects {
       )
     )
   );
-}
 
+  generateBuy$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(actions.generateBuy),
+      mergeMap((data) => this.buysService.generateBuy(data.buy).pipe(
+        map(() =>{
+            const notification: NotificationModel = {
+              title: "Compra Exitosa",
+              type: "success",
+              message: "La compra se genero de manera exitosa"
+            };
+
+            return actions.generateBuySuccess({notification});
+        }),
+        catchError((error) => of(actions.generateBuyFailure({error})))
+      )
+      )
+    )
+  );
+}
