@@ -6,6 +6,6 @@ import { ProductsContainerComponent } from "../products/products-container/produ
 export const dashboardRoutes: Routes = [
     { path: 'products', component:ProductsContainerComponent},
     {path: 'buys', component: BuysContainerComponent},
-    {path: 'shopping', component: ShoopingContainerComponent}
+    {path: '', component: ShoopingContainerComponent}
   ];
   

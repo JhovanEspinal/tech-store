@@ -35,7 +35,9 @@
                       <th scope="col">Cantidad</th>
                     </tr>
                   </thead>
+                  
                   <tr *ngFor="let product of buy.products">              
+                    <td>{{product.idProduct}}</td>
                     <td>{{product.quantity}}</td>
                     </tr>
                 </div>
