@@ -6,5 +6,6 @@ export class ProductModel{
         public enabled: boolean,
         public min: number,
         public max :number,
+        public price: number
     ){}
 }

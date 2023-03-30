@@ -1,3 +1,5 @@
+import { ProductsService } from './services/products.service';
+import { ProductsFacade } from 'src/app/facades/product.facade';
 import { BuysService } from './services/buys.service';
 import { techStoreModule } from './components/tech-store.module';
 import { NgModule } from '@angular/core';
@@ -31,7 +33,9 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   providers: [
     BuysFacade,
-    BuysService
+    BuysService,
+    ProductsFacade,
+    ProductsService
   ],
   bootstrap: [AppComponent]
 })

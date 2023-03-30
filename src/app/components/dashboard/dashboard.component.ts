@@ -9,12 +9,15 @@ import { ProductsFacade } from 'src/app/facades/product.facade';
 })
 export class DashboardComponent implements OnInit{
   
+
   
   constructor(
+    private productsFacade: ProductsFacade
   ){
 
   }
   ngOnInit(): void {
+ this.productsFacade.getAll();
   }
 
 

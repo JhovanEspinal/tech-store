@@ -22,7 +22,6 @@ export class BuysTableComponent implements OnInit{
   ngOnInit(): void {
 
    this.buys$.subscribe(b =>{
-    console.log("b",b)
     this.buys = b
    });
    
