@@ -8,6 +8,7 @@ import { NabvarComponent } from './nabvar/nabvar.component';
 import { ShoopingContainerComponent } from './shooping/shooping-container/shooping-container.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BuysTableComponent } from './buys/buys-table/buys-table.component';
+import { ShoopingGridComponent } from './shooping/shooping-grid/shooping-grid.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { BuysTableComponent } from './buys/buys-table/buys-table.component';
         ShoopingContainerComponent,
         BuysContainerComponent,
         BuysTableComponent,
+        ShoopingGridComponent,
       ],
     imports: [
       CommonModule,

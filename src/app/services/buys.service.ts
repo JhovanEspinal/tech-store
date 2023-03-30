@@ -1,5 +1,5 @@
-import { BuysModel } from './../models/buys.model';
-import { BuysFacade } from './../facades/buys.facade';
+import { BuysModel } from '../models/buys.model';
+import { BuysFacade } from '../facades/buys.facade';
 import { Inject, Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { AppConfig, APP_CONFIG } from '../components/core/config/app.config';

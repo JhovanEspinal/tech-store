@@ -1,4 +1,4 @@
-import { BuysService } from './services/buys.services';
+import { BuysService } from './services/buys.service';
 import { techStoreModule } from './components/tech-store.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';

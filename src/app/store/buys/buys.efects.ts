@@ -1,6 +1,5 @@
 import { NotificationModel } from './../../models/notification.model';
-import { BuysFacade } from './../../facades/buys.facade';
-import { BuysService } from './../../services/buys.services';
+import { BuysService } from '../../services/buys.service';
 import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import * as actions from './buys.actions';
@@ -12,7 +11,6 @@ export class BuysEffects {
   constructor(
     private actions$: Actions,
     private buysService: BuysService,
-    private buysFacade: BuysFacade
   ) {}
 
   loadBuys$ = createEffect(() =>

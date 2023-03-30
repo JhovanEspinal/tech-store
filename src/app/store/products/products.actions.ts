@@ -13,5 +13,5 @@ export const loadProductsSuccess = createAction(
 
 export const loadProductsFailure = createAction(
     "[Products] load Product Failure",
-    props<{err:ErrorModel}>()
+    props<{error:ErrorModel}>()
 );

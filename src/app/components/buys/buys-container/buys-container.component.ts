@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-buys-container',
   templateUrl: './buys-container.component.html',
-  styleUrls: ['./buys-container.component.less']
+  styleUrls: ['./buys-container.component.scss']
 })
 export class BuysContainerComponent implements OnInit{
 
